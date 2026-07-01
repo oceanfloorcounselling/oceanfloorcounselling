@@ -389,6 +389,12 @@ p {
     box-shadow: var(--shadow);
 }
 
+.personal-approach a {
+    text-decoration: none;
+    color: var(--deep-teal);
+    margin-bottom: 1rem;
+}
+
 .personal-approach h3 {
     color: var(--deep-teal);
     margin-bottom: 1rem;
