@@ -13,6 +13,7 @@
     --soft-teal: #88B0A8;
     --deep-teal: #306a73;
     --warm-white: #FDF6F0;
+    --white-alpha: rgba(255, 255, 255, 0.9);
     --soft-gray: #E8E8E8;
     --text-dark: #5D4037;
     --text-light: #8D6E63;
@@ -965,13 +966,17 @@ section[id] {
         top: 100%;
         left: 0;
         width: 100%;
-        background: white;
+        background: var(--white-alpha);
         flex-direction: column;
         padding: 2rem;
         box-shadow: var(--shadow);
         gap: 1.5rem;
     }
-
+    
+    .nav-menu a:hover {
+        color: var(--deep-teal);
+    }
+    
     .nav-menu.active {
         display: flex;
     }
@@ -1102,4 +1107,5 @@ section[id] {
     #main-nav a {
         font-size: 1.1rem !important;
     }
+
 }
