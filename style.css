@@ -208,6 +208,10 @@ p {
     transition: 0.3s;
 }
 
+section[id] {
+    scroll-margin-top: 80px; /* Adjust this number to match the exact height of your header */
+}
+
 /* Hero Section */
 .hero {
     display: grid;
