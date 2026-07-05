@@ -76,6 +76,11 @@ p {
     font-size: 1.1rem;
 }
 
+/* Hide mobile-specific menu items on desktop resolutions */
+.mobile-only {
+    display: none !important;
+}
+
 .section-subtitle {
     font-size: 1.2rem;
     color: var(--text-light);
@@ -956,6 +961,19 @@ section[id] {
 }
 
 @media (max-width: 768px) {
+    .mobile-only {
+        display: block !important;        
+    }
+    
+    li.mobile-only a {
+        color: var(--deep-teal);
+        font-weight: 600;
+    }
+    
+    li.mobile-only a:hover {
+        color: var(--main-teal); 
+    }
+    
     .hamburger {
         display: flex;
     }
