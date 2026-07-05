@@ -846,6 +846,82 @@ p {
     color: #9ca3af;
 }
 
+/* Styling the expandable blocks */
+.modality-dropdown-empty {
+    background: var(--warm-white);        
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modality-dropdown-empty h4{
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.modality-dropdown-empty summary {    
+    list-style: none; /* Hides standard browser arrow if desired */
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.modality-dropdown {
+    background: var(--warm-white);       
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modality-dropdown h4{
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+.modality-dropdown a {
+    text-decoration: none;
+    color: var(--deep-teal);
+    margin-bottom: 1rem;
+}
+
+/* Style the header summary row */
+.modality-dropdown summary {
+    cursor: pointer;
+    list-style: none; /* Hides standard browser arrow if desired */
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+/* Optional: Adds a clean, subtle "+" icon that rotates when open */
+.modality-dropdown summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+    color: var(--main-teal); 
+}
+
+.modality-dropdown summary::before {
+    content: "•";
+    color: var(--main-teal);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+.modality-dropdown[open] summary::after {
+    transform: rotate(45deg); /* Turns the plus into a clean close indicator */
+}
+
+/* Animating or spacing out the text once expanded */
+.dropdown-content {
+    padding-top: 0.5rem;    
+}
+
+.dropdown-content p {
+    font-size: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .nav-screen_hidden {
