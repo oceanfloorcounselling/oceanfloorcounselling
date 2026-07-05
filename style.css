@@ -295,7 +295,11 @@ section[id] {
 /* About Section */
 .about {
     padding: 4rem 0;
-    background: white;
+    background-image: linear-gradient(rgba(255,255,255,1) 15%, rgba(236,253,255,0.92) 50%), url('images/Telendos_Island.JPG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 .about-text {
